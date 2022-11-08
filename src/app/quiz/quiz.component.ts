@@ -23,7 +23,7 @@ export class QuizComponent implements OnInit {
   
   questions1 : questions = {
     question : "what is the version of docker?",
-    answers:["Docker version 20.10.19","Docker version 20.10.18","Docker version 20.10.17","Docker version 20.10.16"]
+    answers:["Docker version 20.10.21","Docker version 20.10.18","Docker version 20.10.17","Docker version 20.10.16"]
   } 
   questions2 : questions = {
     question : "How many containers are running?",
@@ -35,7 +35,7 @@ export class QuizComponent implements OnInit {
   } 
   questions4 : questions = {
     question : "how many images docker?",
-    answers:[" juce","kiwi juce","manga juce","banana juce"]
+    answers:[" 2","3","4","5"]
   } 
   questions5 : questions = {
     question : "what is the name of the last image running?",
@@ -46,16 +46,16 @@ export class QuizComponent implements OnInit {
     answers:["bridge","docker network","docker net","network"]
   } 
   questions7 : questions = {
-    question : "what is my favorite country?",
+    question : "what is version of jenkins?",
     answers:["Libanon","Algeria","Tunisia","Palestaine"]
   } 
   questions8 : questions = {
-    question : "Who's the best football player?",
-    answers:["cr7","messi","neymar","Mbappé"]
+    question : "What is the version of git?",
+    answers:["git version 2.17.1","git version 2.17.2","git version 2.17.3","git version 2.17.4"]
   } 
   questions9 : questions = {
-    question : "what is my favorite juce?",
-    answers:["orange juce","kiwi juce","manga juce","banana juce"]
+    question : "what is the version of node?",
+    answers:["v14.21.1","v14.21.11","v14.21.13","v14.21.15"]
   } 
   
   
@@ -67,7 +67,7 @@ export class QuizComponent implements OnInit {
   correct=0;
   buttonDisabled:boolean = false;
   second: number = 59;
-  minute: number = 59;
+  minute: number = 8;
   maxtime: number = 60;
   ids:string = `road${this.i+1}`
   constructor( private router: Router ) {}
@@ -125,7 +125,7 @@ export class QuizComponent implements OnInit {
     let elem: HTMLElement = document.getElementById(idname)!;
     let questionList: HTMLElement = document.getElementById(this.ids)!;
 
-    if(answer == 'Docker version 20.10.19' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4')
+    if(answer == 'Docker version 20.10.19' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4'|| answer == 'git version 2.17.1'|| answer == 'v14.21.1')
     {
       elem.style.backgroundColor = "green";
       questionList.style.backgroundColor = "green"
