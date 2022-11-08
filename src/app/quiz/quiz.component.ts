@@ -125,7 +125,7 @@ export class QuizComponent implements OnInit {
     let elem: HTMLElement = document.getElementById(idname)!;
     let questionList: HTMLElement = document.getElementById(this.ids)!;
 
-    if(answer == 'Docker version 20.10.19' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4'|| answer == 'git version 2.17.1'|| answer == 'v14.21.1')
+    if(answer == 'Docker version 20.10.21' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4'|| answer == 'git version 2.17.1'|| answer == 'v14.21.1')
     {
       elem.style.backgroundColor = "green";
       questionList.style.backgroundColor = "green"
