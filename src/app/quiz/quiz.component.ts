@@ -46,8 +46,8 @@ export class QuizComponent implements OnInit {
     answers:["bridge","docker network","docker net","network"]
   } 
   questions7 : questions = {
-    question : "what is version of jenkins?",
-    answers:["Libanon","Algeria","Tunisia","Palestaine"]
+    question : "what is version of java?",
+    answers:["openjdk 11.0.17","openjdk 11.0.19","openjdk 11.0.18","openjdk 11.0.16"]
   } 
   questions8 : questions = {
     question : "What is the version of git?",
@@ -125,7 +125,7 @@ export class QuizComponent implements OnInit {
     let elem: HTMLElement = document.getElementById(idname)!;
     let questionList: HTMLElement = document.getElementById(this.ids)!;
 
-    if(answer == 'Docker version 20.10.21' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4'|| answer == 'git version 2.17.1'|| answer == 'v14.21.1')
+    if(answer == 'Docker version 20.10.21' || answer == '3000' || answer == 'bridge' || answer == 'nginx' || answer == '2' || answer == '4'|| answer == 'git version 2.17.1'|| answer == 'v14.21.1'|| answer == 'openjdk 11.0.17')
     {
       elem.style.backgroundColor = "green";
       questionList.style.backgroundColor = "green"
